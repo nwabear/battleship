@@ -40,7 +40,7 @@ public class battleship {
                 for(int x = 0; x < 10; x++) {
                     System.out.print("[" + attackBoard[x][y] + "]");
                 }
-                System.out.println();
+                System.out.println("test");
             }
             System.out.println();
             System.out.println("            Your Board");
