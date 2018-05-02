@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class battleship {
     public static final String RED = "\u001B[31m";
     public static final String RESET = "\u001B[0m";
@@ -59,6 +61,13 @@ public class battleship {
         }
 
         void placePlayerShips() {
-         //   Scanner s = new Scanner(System.in);
+            Scanner s = new Scanner(System.in);
+            boolean done = false;
+            int currentShip = 0;
+            int[] shipLengths = {5, 4, 3, 3, 2};
+            String[] shipNames = {"Aircraft Carrier","Battleship","Submarine","Cruiser","Destroyer"};
+            while(!done) {
+
+            }
         }
 }
