@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.awt.event.KeyEvent;
 
 public class battleship {
     public static final String RED = "\u001B[31m";
@@ -94,6 +95,7 @@ public class battleship {
             System.out.println("You are placing the " + shipNames[currentShip] + ".");
             System.out.println("Use the arrows to move the position, press D to change direction,");
             System.out.print("and press enter to confirm");
+
         }
     }
 
@@ -117,6 +119,19 @@ public class battleship {
             else y++;
         }
         return isGood;
+    }
+
+    int getKeyInput(KeyEvent e) {
+        if(e.getKeyCode() == KeyEvent.VK_UP) {
+            return 0;
+        } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+            return 1;
+        } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+            return 2;
+        } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+            return 3;
+        }
+        return -1;
     }
 
     void clear() {
